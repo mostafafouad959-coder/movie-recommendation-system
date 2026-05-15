@@ -165,9 +165,8 @@ class HybridRecommender:
 
 if __name__ == "__main__":
     from utils.data_processing import load_data, preprocess_movies, preprocess_ratings
-    from content_based import ContentBasedFilter
-    from collaborative_filter import CollaborativeFilter
-
+    from models.content_based import ContentBasedFilter
+    from models.collaborative_filter import CollaborativeFilter
     print("Loading data...")
     movies, ratings = load_data()
     movies = preprocess_movies(movies)
